@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Ignacio Espinoza Retamal</title>
+    <title>Juan Ignacio Espinoza Retamal's Web Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,29 +20,55 @@
             padding: 10px 0;
         }
         main {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        footer {
+        .profile {
             background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile img {
+            border-radius: 10px;
+            width: 200px;
+            height: auto;
+        }
+        .profile div {
+            text-align: left;
+        }
+        .profile h1, .profile p, .profile a {
+            margin: 0;
+        }
+        .profile a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        .profile a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Jiespinozar's Web Page</h1>
+        <h1>Welcome to Juan Ignacio Espinoza Retamal's Web Page</h1>
     </header>
     <main>
-        <p>This is a simple web page created with GitHub Pages.</p>
-        <p>As an astrophysicist, I'm particularly interested in exoplanets.</p>
+        <div class="profile">
+            <img src="images/photo.png" alt="Juan Ignacio Espinoza Retamal">
+            <div>
+                <h1>Juan Ignacio Espinoza Retamal</h1>
+                <p>I am a PhD candidate in Astrophysics at <a href="https://astro.uc.cl/">Pontificia Universidad Católica de Chile</a>, currently visiting the <a href="https://api.uva.nl/">University of Amsterdam</a>. I work in studying the architectures of planetary systems from an observational and theoretical point of view.</p>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Jiespinozar's Web Page</p>
+        <p>&copy; 2024 Juan Ignacio Espinoza Retamal's Web Page</p>
     </footer>
 </body>
 </html>
