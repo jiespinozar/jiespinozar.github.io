@@ -39,6 +39,8 @@ nav a:hover {
     align-items: center;
     padding: 40px;
     background-color: #1a1a1a;
+    max-width: 1000px; /* Limit width to add margin around text */
+    margin: 0 auto;
 }
 
 .intro-text {
@@ -56,7 +58,8 @@ nav a:hover {
 .intro-photo img {
     border-radius: 50%;
     width: 200px;
-    height: auto; /* Maintain aspect ratio */
+    height: 200px; /* Set height to 200px to make the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 .contact-icons {
@@ -78,12 +81,9 @@ a {
     text-decoration: none; /* Remove underline from all links */
 }
 
-a:hover {
+a:hover, a:visited {
+    color: cornflowerblue; /* Ensure visited and hovered links retain the cornflowerblue color */
     text-decoration: none; /* Ensure hover state also has no underline */
-}
-
-a:visited {
-    color: cornflowerblue; /* Ensure visited links retain the cornflowerblue color */
 }
 
 .cv-section, .publications-section, .research-section {
