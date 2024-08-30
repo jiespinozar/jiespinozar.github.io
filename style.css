@@ -22,12 +22,11 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    color: white;
     font-size: 1.5em; /* Increase font size for navigation links */
 }
 
 nav a {
-    color: white; /* Change navigation links to white */
+    color: white; /* Make navigation links white */
     text-decoration: none; /* Remove underline from navigation links */
 }
 
@@ -48,6 +47,11 @@ nav a:hover {
 .intro-text {
     flex: 2;
     padding-right: 20px;
+    font-size: 1.25em; /* Increase font size for description text */
+}
+
+.intro-text h2 {
+    font-size: 2em; /* Increase font size for "Hola!" */
 }
 
 .intro-photo {
@@ -74,7 +78,7 @@ nav a:hover {
     margin: 0 10px;
 }
 
-.contact-icons img {
+contact-icons img {
     width: 40px;
     height: 40px;
 }
