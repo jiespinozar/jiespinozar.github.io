@@ -10,6 +10,7 @@ header {
     background-color: #1a1a1a;
     padding: 20px;
     text-align: center;
+    margin-bottom: 20px; /* Increase space between navigation links and name */
 }
 
 header h1 {
@@ -26,7 +27,7 @@ nav {
 }
 
 nav a {
-    color: white; /* Make navigation links white */
+    color: white; /* Change navigation links to white */
     text-decoration: none; /* Remove underline from navigation links */
 }
 
@@ -51,7 +52,8 @@ nav a:hover {
 }
 
 .intro-text h2 {
-    font-size: 2em; /* Increase font size for "Hola!" */
+    font-size: 2em; /* Increase font size for greeting */
+    color: cornflowerblue; /* Make "Buenas!" cornflowerblue */
 }
 
 .intro-photo {
@@ -78,9 +80,9 @@ nav a:hover {
     margin: 0 10px;
 }
 
-contact-icons img {
-    width: 40px;
-    height: 40px;
+.contact-icons img {
+    width: 30px; /* Reduce size of icons */
+    height: 30px; /* Reduce size of icons */
 }
 
 a {
