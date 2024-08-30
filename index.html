@@ -4,135 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Ignacio Espinoza Retamal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a1a;
-            color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        section h2 {
-            border-bottom: 2px solid #666;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-        a {
-            color: #FFD700;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="publications.html">Publications</a>
+        </nav>
         <h1>Juan Ignacio Espinoza Retamal</h1>
-        <p>PhD Candidate in Astrophysics</p>
     </header>
-    
-    <section>
-        <h2>About Me</h2>
-        <p>I am a PhD candidate in Astrophysics at <a href="https://astro.uc.cl/">Pontificia Universidad Católica de Chile (PUC)</a>, currently doing an internship at the <a href="https://api.uva.nl/">University of Amsterdam (UvA)</a>. I completed my undergraduate studies at PUC in Chile. My main research interests are on exoplanets, from demographics to architectures considering observational and theoretical points of view.</p>
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Hola!</h2>
+            <p>My name is Juan Ignacio Espinoza Retamal, and I am a PhD candidate in Astrophysics at the <a href="https://astro.uc.cl/">Pontificia Universidad Católica de Chile (PUC)</a>. I am currently doing an internship at the <a href="https://api.uva.nl/">University of Amsterdam (UvA)</a>. My research focuses on the demographics and architectures of exoplanets, combining observational and theoretical approaches.</p>
+        </div>
+        <div class="intro-photo">
+            <img src="images/photo.jpg" alt="Juan Ignacio Espinoza Retamal">
+        </div>
     </section>
-
-    <section>
-        <h2>Education</h2>
-        <p><strong>PhD in Astrophysics</strong>, Pontificia Universidad Católica de Chile (2021 – present)</p>
-        <p><strong>BSc in Astronomy (summa cum laude)</strong>, Pontificia Universidad Católica de Chile (2016 – 2020)</p>
+    <section class="contact-icons">
+        <a href="mailto:jiespinozar@uc.cl"><img src="images/email-icon.png" alt="Email Icon"></a>
+        <a href="https://orcid.org/your-orcid-id"><img src="images/orcid-icon.png" alt="ORCID Icon"></a>
+        <a href="https://github.com/jiespinozar"><img src="images/github-icon.png" alt="GitHub Icon"></a>
     </section>
-
-    <section>
-        <h2>Fellowships & Awards</h2>
-        <ul>
-            <li>ANID Complementary Benefits - Internship (2024 – present)</li>
-            <li>ANID Complementary Benefits - Operational Expenses (2023 – present)</li>
-            <li>ANID National PhD Fellowship (2021 – present)</li>
-            <li>Academic Excellence Award (2016)</li>
-            <li>Monsignor Carlos Casanueva Award (2016 – 2020)</li>
-            <li>Academic Excellence Award, Arauco Inc. (2016 – 2020)</li>
-            <li>Bicentenario Scholarship (2016 – 2020)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240618631E/abstract">Espinoza-Retamal, J.I., et al. 2024, “The spin-orbit alignment of seven warm Jupiter systems” (in preparation)</a></li>
-            <li><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...958L..20E/abstract">Espinoza-Retamal, J.I., Stefánsson, G., Petrovich, C., et al. 2024, “HATS-38 b and WASP-139 b join a growing group of hot Neptunes on polar orbits”, The Astronomical Journal</a></li>
-            <li><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...958L..20E/abstract">Espinoza-Retamal, J.I., Brahm, R., Petrovich, C., et al. 2023, “The Aligned Orbit of the Eccentric Proto Hot Jupiter TOI-3362 b”, The Astrophysical Journal Letters</a></li>
-            <li><a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..231E/abstract">Espinoza-Retamal, J.I., Zhu, W. & Petrovich, C. 2023, “Prospects from TESS and Gaia to Constrain the Flatness of Planetary Systems”, The Astronomical Journal</a></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Conferences and Workshops</h2>
-        <h3>Contributed Talks</h3>
-        <ul>
-            <li>The 2nd CATA Area 6 Science Workshop, Santiago, Chile, May 2024: “Studying the populations of Neptunes and warm Jupiters with ESPRESSO”</li>
-            <li>The 6th China-Chile Bilateral Conference for Astronomy, Puerto Varas, Chile, November 2023: “Prospects to constrain the flatness of planetary systems”</li>
-        </ul>
-
-        <h3>Seminars</h3>
-        <ul>
-            <li>Astronomy Seminar, University Adolfo Ibañez, Santiago, Chile, August 2022: “Prospects from TESS and Gaia to constrain the flatness of planetary systems”</li>
-        </ul>
-
-        <h3>Posters</h3>
-        <ul>
-            <li>Exoplanets 5, Leiden, Netherlands, June 2024: “Exploring the obliquities of Neptune-sized exoplanets with ESPRESSO”</li>
-            <li>Open Problems in the Astrophysics of Gas Giants, Puerto Natales, Chile, December 2023: “The Aligned Orbit of the Eccentric Proto Hot Jupiter TOI-3362 b”</li>
-            <li>IX Annual GMT Community Science Meeting, Washington DC, USA, September 2023: “The Aligned Orbit of the Eccentric Proto Hot Jupiter TOI-3362 b”</li>
-            <li>VII Workshop Commemorating the 10th Anniversary of the Millennium Institute for Astrophysics, Pirque, Chile, May 2023: “Prospects from TESS and Gaia to constrain the flatness of planetary systems”</li>
-            <li>XVIII Chilean Astronomical Society Annual Meeting, Temuco, Chile, March 2023: “Prospects from TESS and Gaia to constrain the flatness of planetary systems”</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Teaching Experience</h2>
-        <ul>
-            <li>AST1529: Planets in the Universe (PUC) 2023-A</li>
-            <li>MAT1640: Differential Equations (PUC) 2023-A</li>
-            <li>AST1529: Planets in the Universe (PUC) 2022-A</li>
-            <li>MAT1640: Differential Equations (PUC) 2022-A</li>
-            <li>MAT1630: Calculus III (PUC) 2022-A</li>
-            <li>MAT1640: Differential Equations (PUC) 2021-B</li>
-            <li>MAT1640: Differential Equations (PUC) 2020-A</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:jiespinozar@uc.cl">jiespinozar@uc.cl</a></p>
-        <p>Website: <a href="https://jiespinozar.github.io/">jiespinozar.github.io</a></p>
-    </section>
-
-    <div class="footer">
+    <footer>
         <p>&copy; 2024 Juan Ignacio Espinoza Retamal</p>
-    </div>
+    </footer>
 </body>
 </html>
