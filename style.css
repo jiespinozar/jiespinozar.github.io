@@ -26,7 +26,7 @@ nav {
 
 nav a {
     color: white; /* Navigation links are white */
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from navigation links */
 }
 
 nav a:hover {
@@ -72,10 +72,11 @@ nav a:hover {
 
 a {
     color: cornflowerblue; /* Default link color */
+    text-decoration: none; /* Remove underline from all links */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Ensure hover state also has no underline */
 }
 
 a:visited {
