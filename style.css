@@ -22,10 +22,11 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    font-size: 1.5em; /* Increase font size for navigation links */
 }
 
 nav a {
-    color: white; /* Navigation links are white */
+    color: white; /* Change navigation links to white */
     text-decoration: none; /* Remove underline from navigation links */
 }
 
@@ -39,7 +40,7 @@ nav a:hover {
     align-items: center;
     padding: 40px;
     background-color: #1a1a1a;
-    max-width: 1000px; /* Limit width to add margin around text */
+    max-width: 800px; /* Reduce max-width to add more margin around text */
     margin: 0 auto;
 }
 
