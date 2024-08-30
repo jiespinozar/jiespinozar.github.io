@@ -48,12 +48,15 @@ nav a:hover {
 
 .intro-photo {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-photo img {
     border-radius: 50%;
     width: 200px;
-    height: 200px;
+    height: auto; /* Maintain aspect ratio */
 }
 
 .contact-icons {
