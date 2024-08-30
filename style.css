@@ -25,12 +25,12 @@ nav {
 }
 
 nav a {
-    color: white; /* Change navigation links to white */
+    color: white; /* Navigation links are white */
     text-decoration: none;
 }
 
 nav a:hover {
-    color: cornflowerblue; /* Change hover color to cornflowerblue */
+    color: cornflowerblue; /* Hover color is cornflowerblue */
 }
 
 .intro {
@@ -71,11 +71,15 @@ nav a:hover {
 }
 
 a {
-    color: cornflowerblue; /* Change all links to cornflowerblue */
+    color: cornflowerblue; /* Default link color */
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+a:visited {
+    color: cornflowerblue; /* Ensure visited links retain the cornflowerblue color */
 }
 
 .cv-section, .publications-section, .research-section {
