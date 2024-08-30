@@ -6,21 +6,30 @@
     <title>Juan Ignacio Espinoza Retamal</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const externalLinks = document.querySelectorAll('a[href^="http"]');
+        externalLinks.forEach(link => {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    });
+    </script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="cv.html">CV</a>
-            <a href="publications.html">Publications</a>
-        </nav>
+        	<a href="index.html">Home</a>
+        	<a href="research.html">Research</a>
+        	<a href="cv.html">CV</a>
+        	<a href="cv.html#publications">Publications</a> <!-- Updated link -->
+	</nav>
         <h1>Juan Ignacio Espinoza Retamal</h1>
     </header>
     <section class="intro">
         <div class="intro-text">
             <h2>Buenas!</h2> <!-- Update greeting text -->
-            <p>My name is Juan Ignacio Espinoza Retamal, and I am a PhD candidate in Astrophysics at the <a href="https://astro.uc.cl/">Pontificia Universidad Católica de Chile (PUC)</a>. I am currently doing an internship at the <a href="https://api.uva.nl/">University of Amsterdam (UvA)</a>. My research focuses on the demographics and architectures of exoplanets, combining observational and theoretical approaches.</p>
+            <p>My name is Juan Ignacio Espinoza Retamal. I'm a PhD candidate in astrophysics at the <a href="https://astro.uc.cl/en/">Pontificia Universidad Católica de Chile</a>, currently studying exoplanets using both observational and theoretical approaches.</p>
         </div>
         <div class="intro-photo">
             <img src="images/photo.jpg" alt="Juan Ignacio Espinoza Retamal">

@@ -10,11 +10,11 @@ header {
     background-color: #1a1a1a;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px; /* Increase space between navigation links and name */
+    margin-bottom: 20px;
 }
 
 header h1 {
-    margin: 0;
+    margin: 20px 0 10px;
     font-size: 2.5em;
     color: cornflowerblue;
 }
@@ -23,11 +23,11 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 1.5em; /* Increase font size for navigation links */
+    font-size: 1.5em; /* Font size for navigation links */
 }
 
 nav a {
-    color: white; /* Change navigation links to white */
+    color: white !important; /* Ensure navigation links are white */
     text-decoration: none; /* Remove underline from navigation links */
 }
 
@@ -41,8 +41,38 @@ nav a:hover {
     align-items: center;
     padding: 40px;
     background-color: #1a1a1a;
-    max-width: 800px; /* Reduce max-width to add more margin around text */
+    max-width: 800px;
     margin: 0 auto;
+}
+
+.research-intro {
+    padding: 10px 40px; /* Adjusted padding to reduce top spacing */
+    background-color: #1a1a1a;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cv-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: -50px auto; /* Reduced vertical space between sections */
+    background-color: #1a1a1a;
+}
+
+.cv-section h2 {
+    font-size: 1.5em; /* Match the font size of navigation links */
+    color: cornflowerblue; /* Section titles in cornflowerblue */
+    margin-bottom: 10px;
+}
+
+.cv-section ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Indent list items */
+}
+
+.cv-section li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.25em; /* Match font size with text on other pages */
 }
 
 .intro-text {
@@ -95,13 +125,6 @@ a:hover, a:visited {
     text-decoration: none; /* Ensure hover state also has no underline */
 }
 
-.cv-section, .publications-section, .research-section {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #1a1a1a;
-}
-
 footer {
     background-color: #1a1a1a;
     color: white;
@@ -111,3 +134,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+

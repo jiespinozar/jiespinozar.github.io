@@ -6,6 +6,15 @@
     <title>CV - Juan Ignacio Espinoza Retamal</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const externalLinks = document.querySelectorAll('a[href^="http"]');
+        externalLinks.forEach(link => {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    });
+    </script>
 </head>
 <body>
     <header>
@@ -13,23 +22,37 @@
             <a href="index.html">Home</a>
             <a href="research.html">Research</a>
             <a href="cv.html">CV</a>
-            <a href="publications.html">Publications</a>
+            <a href="cv.html#publications">Publications</a> <!-- Updated link -->
         </nav>
         <h1>Brief CV</h1>
     </header>
     <section class="cv-section">
         <h2>Education</h2>
         <ul>
-            <li>PhD in Astrophysics, Pontificia Universidad Católica de Chile, 2021 – present</li>
-            <li>BSc in Astronomy (summa cum laude), Pontificia Universidad Católica de Chile, 2016 – 2020</li>
-        </ul>
-        <h2>Research Experience</h2>
-        <ul>
-            <li>Current PhD candidate focusing on exoplanetary system architectures</li>
+            <li><b>PhD in Astrophysics</b>, Pontificia Universidad Católica de Chile, present</li>
+            <li><b>BSc in Astronomy</b> (summa cum laude), Pontificia Universidad Católica de Chile, 2020</li>
         </ul>
     </section>
+    <section class="cv-section">
+        <h2>Research Experience</h2>
+        <ul>
+            <li><b>Visiting graduate student</b>, University of Amsterdam, May - Oct 2024</li>
+            <!-- Add more research experience items here -->
+        </ul>
+    </section>
+    <section class="cv-section">
+        <h2 id="publications">Publications</h2> <!-- Added id here -->
+        <ul>
+		<li><b>Espinoza-Retamal, J.I.</b>, Stefánsson, G., Petrovich, C., et al. 2024, <em>"HATS-38 b and WASP-139 b join a growing group of hot Neptunes in polar orbits"</em>, accepted by The Astronomical Journal. <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240618631E/abstract">Link</a></li>
+            <li><b>Espinoza-Retamal, J.I.</b>, Brahm, R., Petrovich, C., et al. 2023, <em>"The Aligned Orbit of the Eccentric Proto Hot Jupiter TOI-3362 b"</em>, The Astrophysical Journal Letters, 958, L20. <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...958L..20E/abstract">Link</a></li>
+            <li><b>Espinoza-Retamal, J.I.</b>, Zhu, W. & Petrovich, C. 2023, <em>"Prospects from TESS and Gaia to Constrain the Flatness of Planetary Systems"</em>, The Astronomical Journal, 166, 231. <a href="https://ui.adsabs.harvard.edu/abs/2023AJ....166..231E/abstract">Link</a></li>
+            <!-- Add more publication items here -->
+        </ul>
+    </section>
+    <!-- Add more sections as needed -->
     <footer>
         <p>&copy; 2024 Juan Ignacio Espinoza Retamal</p>
     </footer>
 </body>
 </html>
+
