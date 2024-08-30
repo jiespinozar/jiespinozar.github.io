@@ -1,13 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
+    background-color: #1a1a1a; /* Use a single color for the background */
     color: #f0f0f0;
 }
 
 header {
-    background-color: #333;
+    background-color: #1a1a1a; /* Match the middle section color */
     padding: 20px;
     text-align: center;
 }
@@ -15,7 +15,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #4dd2ff;
+    color: cornflowerblue; /* Change name color */
 }
 
 nav {
@@ -25,7 +25,7 @@ nav {
 }
 
 nav a {
-    color: #f0f0f0;
+    color: cornflowerblue; /* Change link color */
     text-decoration: none;
 }
 
@@ -38,6 +38,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    background-color: #1a1a1a; /* Match the middle section color */
 }
 
 .intro-text {
@@ -73,10 +74,11 @@ nav a:hover {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    background-color: #1a1a1a; /* Match the middle section color */
 }
 
 footer {
-    background-color: #333;
+    background-color: #1a1a1a; /* Match the middle section color */
     color: white;
     text-align: center;
     padding: 10px;
