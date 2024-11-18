@@ -6,14 +6,25 @@
     <title>Research - Juan Ignacio Espinoza Retamal</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const externalLinks = document.querySelectorAll('a[href^="http"]');
-        externalLinks.forEach(link => {
-            link.setAttribute('target', '_blank');
-            link.setAttribute('rel', 'noopener noreferrer');
+    <script type="text/javascript">
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const externalLinks = document.querySelectorAll('a[href^="http"]');
+            externalLinks.forEach(link => {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            });
         });
-    });
     </script>
 </head>
 <body>
@@ -28,10 +39,38 @@
     </header>
     <section class="research-intro"> <!-- Changed class name here -->
         <div class="intro-text">    
-            <p>I'm currently a PhD candidate at the <a href="https://astro.uc.cl/">Pontificia Universidad Católica de Chile</a> working on exoplanets under the supervision of Dr <a href="https://www.cpetrovich.com/">Cristobal Petrovich</a>, and in close collaboration with Dr <a href="https://ingenieria.uai.cl/profesor/rafael-brahm/">Rafael Brahm</a> and Dr <a href="https://gummiks.github.io/">Guðmundur Stefánsson</a>. My PhD thesis, titled <em>Constraining the flatness of planetary systems</em>, studies the architectures of planetary systems to understand their formation and evolution histories. In order to do that, I follow both observational and theoretical approaches.</p> 
-	    <p>On the observational side, my research focuses on measuring stellar obliquities using the Rossiter–McLaughlin effect seen in the radial velocities during a planetary transit. I recently measured the stellar obliquity of the two hot Neptunes HATS-38 b and WASP- 139 b, finding that they both have nearly polar orbits.</p>
-        </div>  
+            <p>I'm currently a PhD candidate at <a href="https://astro.uc.cl/en/">Pontificia Universidad Católica de Chile</a> working on exoplanets under the supervision of Dr <a href="https://www.cpetrovich.com/">Cristobal Petrovich</a>, and in close collaboration with Dr <a href="https://ingenieria.uai.cl/profesor/rafael-brahm/">Rafael Brahm</a> and Dr <a href="https://gummiks.github.io/">Guðmundur Stefánsson</a>. My PhD thesis, titled <em>Constraining the flatness of planetary systems</em>, studies the architectures of planetary systems to understand their formation and evolution histories. In order to do that, I follow both observational and theoretical approaches.</p> 
+        </div>
     </section>
+
+    <section class="research-section">
+    <h2>Measuring the obliquities of different transiting populations</h2>
+    <p>On the observational side, my research focuses on measuring stellar obliquities (a.k.a spin-orbit misalignment) for different populations of transiting exoplanets. To do that, I use observations of the Rossiter-Mclaughlin (RM) effect taken with state-of-the-art-spectrographs on large telescopes.</p>
+    <div class="figure-and-text">
+        <!-- Imagen -->
+        <figure>
+            <img src="images/RM.gif" alt="Stellar Obliquities" class="research-image">
+	</figure>
+        <!-- Texto -->
+        <div class="research-text">
+            <p>The RM effect is a spectroscopic phenomenon observed when a planet transits in front of its host star, blocking part of the stellar surface. As the planet moves across the star, it temporarily blocks regions of the stellar disk with different rotational velocities due to the star's rotation. This causes an apparent anomaly in the radial velocity measurements: a blue shift as the planet blocks the approaching limb, and a red shift as it blocks the receding limb. The exact shape of this effect depends on the sky-projected obliquity (λ). By measuring the radial velocities during transits, the RM provides insights into the alignment between the star's rotation axis and the planet's orbital axis, offering clues about the system's dynamical history and evolution.</p>
+        </div>
+    </div>
+
+    <div class="figure-and-text figure-right">
+    <!-- Texto a la izquierda -->
+    <div class="research-text">
+	    <p>Using ESPRESSO observations, I have measured the sky-projected obliquity of the super eccentric $(e = 0.72)$ proto hot Jupiter TOI-3362 b. I found this planet is perfectly aligned with its host star, having $\lambda=1.2\pm2.2^{\circ}$.</p>
+    </div>
+    <!-- Figura a la derecha -->
+    <figure>
+        <img src="images/TOI-3362.jpg" alt="TOI-3362 Observation" class="research-image">
+    </figure>
+</div>
+
+</section>
+
+
     <footer>
         <p>&copy; 2024 Juan Ignacio Espinoza Retamal</p>
     </footer>

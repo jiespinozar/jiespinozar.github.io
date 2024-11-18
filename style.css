@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #1a1a1a;
     color: #f0f0f0;
+    padding-bottom: 50px; /* Asegúrate de que haya espacio suficiente */
 }
 
 header {
@@ -41,23 +42,140 @@ nav a:hover {
     align-items: center;
     padding: 40px;
     background-color: #1a1a1a;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    text-align: justify; /* Justifica el texto */
 }
 
 .research-intro {
     padding: 10px 40px; /* Adjusted padding to reduce top spacing */
     background-color: #1a1a1a;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    text-align: justify; /* Justifica el texto */
 }
 
-.cv-section {
-    padding: 20px;
-    max-width: 800px;
-    margin: -50px auto; /* Reduced vertical space between sections */
-    background-color: #1a1a1a;
+.research-section {
+    padding: 20px; /* Espaciado interior */
+    margin: 20px auto; /* Espaciado exterior */
+    max-width: 1000px; /* Ancho máximo de la sección */
+    background-color: #1a1a1a; /* Fondo igual que el resto de la página */
+    border-top: 2px solid #333333; /* Línea de separación */
 }
+
+.research-section h2 {
+    font-size: 1.5em; /* Tamaño del encabezado */
+    color: cornflowerblue; /* Color del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.research-section p {
+    text-align: justify; /* Justificación del texto */
+    font-size: 1.25em; /* Tamaño de fuente coherente con otras partes */
+    margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+.research-section .figure-and-text img {
+    float: left; /* La imagen flota a la izquierda */
+    margin: 10px 20px 10px 0; /* Espaciado alrededor de la imagen (derecha, arriba y abajo) */
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    border: 2px solid #333; /* Borde opcional */
+    border-color: white;
+    margin-bottom: 7px; /* Espaciado entre párrafos */
+    display: flex; /* Usa Flexbox */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 20px; /* Espaciado entre la figura y el texto */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.research-section .figure-and-text p {
+    text-align: justify; /* Justificación del texto */
+    margin: 0; /* Ajusta los márgenes si es necesario */
+}
+
+
+.research-section figure {
+    margin: 0; /* Elimina márgenes predeterminados del elemento figure */
+    text-align: center; /* Centra la figura y el caption */
+}
+
+
+.research-section .research-image {
+    max-width: 600px; /* Tamaño máximo de la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    border: 2px solid #333; /* Borde opcional */
+    border-color: cornflowerblue;
+}
+
+.figure-and-text {
+    display: grid; /* Usa grid layout */
+    grid-template-columns: auto 1fr; /* Figura a la izquierda, texto a la derecha */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 20px; /* Espaciado entre la figura y el texto */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.figure-and-text figure {
+    margin: 0; /* Elimina márgenes innecesarios */
+    text-align: center; /* Centra la figura horizontalmente */
+}
+
+.figure-and-text img {
+    max-width: 100%; /* Asegúrate de que la imagen no exceda el espacio disponible */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    border: 2px solid #333; /* Opcional: bordes */
+}
+
+
+.figure-right .research-text {
+    text-align: justify; /* Justificación del texto */
+}
+
+.figure-right figure {
+    text-align: center; /* Centra el caption */
+    max-width: 600px; /* Tamaño máximo de la figura */
+    margin: 0; /* Ajusta los márgenes */
+}
+
+.figure-right figcaption {
+    font-size: 0.9em; /* Tamaño del texto del caption */
+    color: #cccccc; /* Color del caption */
+    margin-top: 5px; /* Espaciado entre la imagen y el caption */
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both; /* Asegura que los elementos flotantes no interfieran con el resto del contenido */
+}
+
+
+.research-section .research-text {
+    flex: 1; /* El texto toma el resto del espacio disponible */
+}
+
+hr {
+    margin: 20px auto; /* Espaciado vertical entre las secciones */
+    border: 0; /* Elimina bordes predeterminados */
+    height: 1px; /* Define el grosor de la línea */
+    background-color: #333333; /* Color de la línea (puedes cambiarlo) */
+    width: 80%; /* Asegúrate de que no ocupe todo el ancho */
+}
+
+
+.cv-section {
+    padding: 10px 20px; /* Reduce el espacio interior (arriba y abajo) */
+    margin: 0px auto; /* Reduce el espacio entre las secciones */
+    max-width: 1000px; /* Mantén el ancho deseado */
+    border-top: 2px solid #333333; /* Línea de separación */
+    background-color: #1a1a1a; /* Esto no cambia */
+}
+
 
 .cv-section h2 {
     font-size: 1.5em; /* Match the font size of navigation links */
@@ -68,6 +186,13 @@ nav a:hover {
 .cv-section ul {
     list-style-type: disc;
     padding-left: 20px; /* Indent list items */
+}
+
+.cv-section h3 {
+    font-size: 1.25em; /* Ajusta el tamaño del subtítulo */
+    color: cornflowerblue; /* Cambia el color del subtítulo */
+    margin-top: 20px; /* Espaciado adicional entre subsecciones */
+    margin-bottom: 10px;
 }
 
 .cv-section li {
@@ -134,4 +259,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
